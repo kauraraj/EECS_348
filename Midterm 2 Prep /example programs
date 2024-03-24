@@ -1,0 +1,107 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int fibonacci(int n) {
+    if (n<=1) {
+        return 1;
+    }
+    
+    return fibonacci(n-1) + fibonacci(n-2);
+    
+}
+
+int factorial(int n) {
+    
+    if(n < 0){
+        return -1;
+    }
+    
+    // Recursive
+    /*
+    if(n <= 1) {
+        return 1;
+    }
+    
+    return n * factorial(n-1);
+    */
+    
+    // OR
+    
+    int total = 1;
+    for(int i = 2; i <= n; i++) {
+        total *= i;
+    }
+    
+    return total;
+    
+}
+
+int main() {
+    
+    // print all nums that are 3 digits and see if the total of their cubes are equal to original num
+    
+    /*
+    int i, first, second, third;
+    
+    for(i = 100, i <= 999, i++) {
+        
+        first = i / 100; // ex: 400 / 100 = 4; 397 / 100 = 3
+        second = (i % 100) / 10 // ex: 397 % 100 = 97 => 97 / 10 = 9
+        third = i % 10; // ex: 400 % 10 = 0; 397 % 10 = 7
+        
+        int total = (first * first * first) + (second * second * second) + (third * third * third);
+        
+        if (total == i) {
+            printf("%d", total);
+            
+        }
+        
+    }
+    
+    */
+    
+    // Print all integers between 1 and 100 that are evenly divisible by 2 and 4
+    /*
+    for(int i = 1; i <= 100; i++) {
+        
+        if ((i % 4) == 0) {
+            printf("The integer %d is evenly divisible by 2 and 4\n", i);
+        }
+        
+    }
+    // OR 
+    
+    for(int i = 4; i<= 100; i+=4) {
+        printf("%d\n", i);
+        
+    }
+    */
+    
+    // Factorial function
+    /*
+    int x = 5;
+    int y = factorial(x);
+    printf("%d", y);
+        
+    */
+    // Right angle with stars
+    /*
+    int n = 5;
+    
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    */
+    /*
+    for(int i = 0; i <= 10; i++) {
+        int z = fibonacci(i);
+        printf("%d\n", z);
+    }
+    */
+    
+    return 0;
+
+}
