@@ -1,2 +1,5 @@
 # EECS_348
-labs for 348
+
+Anything I do in EECS 348 goes here
+
+
