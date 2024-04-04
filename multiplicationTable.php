@@ -4,7 +4,6 @@ if($size > 0) {
 
     echo "<h2>Multiplication Table for $size</h2>";
     echo "<table>";
-
     for($i = 1; $i <= $size; $i++) {
         echo "<tr>";
         for($j = 1; $j <= $size; $j++) {
@@ -17,5 +16,3 @@ if($size > 0) {
 } else {
     echo "<p>Enter a valid positive integer.</p>";
 }
-
-?>
