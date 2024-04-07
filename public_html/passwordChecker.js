@@ -10,6 +10,10 @@ document.getElementById("submitButton").addEventListener("click", function() {
 });
 
 function password_checker(password1, password2) {
+
+    if((password1.length < 8) && (password2.length < 8)) {
+        return "Password 1 and Password 2 aren't 8 or more characters";
+    }
     if(password1.length < 8) {
         return "Password 1 Length isn't 8 or more characters";
     }
@@ -18,7 +22,7 @@ function password_checker(password1, password2) {
     }
 
     if (password1 == password2) {
-        return "The passwords matched";
+        return "Everything is good!";
     } else {
         return "The passwords don't match";
     }
